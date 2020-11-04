@@ -1,5 +1,5 @@
-<div [formGroup]="connectForm" class="container">
-  <h1 class="mb-3">Connect</h1>
+<div [formGroup]="loginForm" class="container">
+  <h1 class="mb-3">Login</h1>
   <div class="mb-3">
     <label for="username">Username</label>
     <div class="input-group">
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <button [disabled]="connectForm.invalid" class="btn btn-primary btn-lg btn-block" type="submit">Continue to connect</button>
+  <button [disabled]="loginForm.invalid" class="btn btn-primary btn-lg btn-block" type="submit">Continue to connect</button>
 </div>
 
 
