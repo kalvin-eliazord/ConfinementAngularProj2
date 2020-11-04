@@ -11,8 +11,9 @@ import { MapComponent } from './map/map.component';
 import { TestComponent } from './home/test/test.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { EdituserComponent } from './edituser/edituser.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,16 @@ import {HttpClientModule} from '@angular/common/http';
     MapComponent,
     TestComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    EdituserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

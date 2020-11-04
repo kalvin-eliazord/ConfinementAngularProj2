@@ -31,6 +31,14 @@
   </div>
 
   <div class="mb-3">
+    <label for="password">Password<span class="text-muted"></span></label>
+    <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password">
+    <div class="invalid-feedback">
+      Please enter a valid username and password to connect.
+    </div>
+  </div>
+
+  <div class="mb-3">
     <label for="email">Email <span class="text-muted"></span></label>
     <input formControlName="email" type="email" class="form-control" id="email" placeholder="you@example.com">
     <div class="invalid-feedback">
@@ -46,7 +54,7 @@
     </div>
   </div>
 
-  <button [disabled]="registerForm.invalid" class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+  <button [disabled]="registerForm.invalid" (click)="registerUser()" class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
 </div>
 
 
