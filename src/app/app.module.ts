@@ -9,8 +9,8 @@ import { MenuComponent } from './menu/menu.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { MapComponent } from './map/map.component';
 import { TestComponent } from './home/test/test.component';
-import { ConnexionComponent } from './connexion/connexion.component';
-import { InscriptionComponent } from './inscription/inscription.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
@@ -21,8 +21,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     FourOhFourComponent,
     MapComponent,
     TestComponent,
-    ConnexionComponent,
-    InscriptionComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

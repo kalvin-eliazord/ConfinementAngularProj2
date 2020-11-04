@@ -4,13 +4,13 @@ import {HomeComponent} from './home/home.component';
 import {MenuComponent} from './menu/menu.component';
 import {FourOhFourComponent} from './four-oh-four/four-oh-four.component';
 import {MapComponent} from './map/map.component';
-import {ConnexionComponent} from './connexion/connexion.component';
-import {InscriptionComponent} from './inscription/inscription.component';
+import {LoginComponent} from './login/login.component';
+import {RegisterComponent} from './register/register.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'connexion', component: ConnexionComponent },
-  { path: 'inscription', component: InscriptionComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'map', component: MapComponent},
   { path: '', component: HomeComponent },

@@ -3,10 +3,10 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-inscription',
-  templateUrl: './inscription.component.html',
-  styleUrls: ['./inscription.component.css']
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class InscriptionComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
 
   constructor() {
@@ -15,7 +15,7 @@ export class InscriptionComponent implements OnInit {
       lastName: new FormControl('', [Validators.required]),
       username: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
-      adress: new FormControl('', [Validators.minLength(10), Validators.maxLength(200)])
+      address: new FormControl('', [Validators.minLength(10), Validators.maxLength(200)])
     });
   }
 
